@@ -1,8 +1,6 @@
 import './App.css';
-import HelloWorld from './components/HelloWorld';
-import SayMyName from './components/Props/SayMyName';
-import Pessoa from './components/Props/Pessoa';
-import List from './components/Fragments/List';
+
+import List1 from './components/Props/PropTypes/List1';
 
 function App() {
   
@@ -16,15 +14,7 @@ function App() {
   
   return (
     <div className="App">
-      <HelloWorld/>
-      <SayMyName nome="Vitor" />
-      <Pessoa 
-        nome="Vitor" 
-        idade="20" 
-        profissao="Programador"
-        foto="https://via.placeholder.com/150"
-        />
-        <List/>
+        <List1/>
     </div>
   );
 }

@@ -6,8 +6,8 @@ function List() {
         <>
             <h1>Minha Lista</h1>
             <ul>
-                <Item marca='Tesla'/>
-                <Item marca='Toyota'/>
+                <Item marca='Tesla' />
+                <Item marca='Toyota' />
                 <Item marca='Volvo'/>
             </ul>
         </>
