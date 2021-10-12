@@ -1,4 +1,4 @@
-import Frase from "./Frase"
+import Frase from "./CSS/Frase/Frase"
 
 function HelloWorld() {
     

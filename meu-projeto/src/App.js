@@ -1,6 +1,8 @@
 import './App.css';
 import HelloWorld from './components/HelloWorld';
-import Frase from './components/Frase';
+import SayMyName from './components/Props/SayMyName';
+import Pessoa from './components/Props/Pessoa';
+import List from './components/Fragments/List';
 
 function App() {
   
@@ -14,12 +16,15 @@ function App() {
   
   return (
     <div className="App">
-      <h2>Hello World from React</h2>
-      <p>Olá, {name}</p>
-      <p>Soma: {sum(5, 8)}</p>
-      <img src= {url} alt='Minha imagem' />
       <HelloWorld/>
-      <Frase/>
+      <SayMyName nome="Vitor" />
+      <Pessoa 
+        nome="Vitor" 
+        idade="20" 
+        profissao="Programador"
+        foto="https://via.placeholder.com/150"
+        />
+        <List/>
     </div>
   );
 }
