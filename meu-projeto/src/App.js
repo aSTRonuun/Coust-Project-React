@@ -1,6 +1,8 @@
 import './App.css';
 
 import List1 from './components/Props/PropTypes/List1';
+import Evento from './components/Eventos/Evento';
+import Form1 from './components/Hook/Forms1';
 
 function App() {
   
@@ -14,7 +16,8 @@ function App() {
   
   return (
     <div className="App">
-        <List1/>
+        <h2>Testando Eventos</h2>
+        <Form1/>
     </div>
   );
 }
