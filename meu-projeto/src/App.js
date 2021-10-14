@@ -1,15 +1,16 @@
+import { useState } from 'react';
 import './App.css';
-import Lista from './components/Listas/Lista';
+import Saudacao from './components/Hook/StateLif/Saudacao';
+import SeuNome from './components/Hook/StateLif/SeuNome';
 
 function App() {
-
-  const minhasLinguagens = ['C', 'C++', 'Java', 'Typescript' , 'Javascript']
+  const [name, setName] = useState();
   
   return (
     <div className="App">
-        <h2>Rederização de Listas</h2>
-        <Lista itens={minhasLinguagens}/>
-        <Lista itens={[]}/>
+        <h2>State Lift</h2>
+        <SeuNome setName={setName} />
+        <Saudacao name={name} />
     </div>
   );
 }
