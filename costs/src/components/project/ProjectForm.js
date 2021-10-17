@@ -7,14 +7,14 @@ import styles from './ProjectForm.module.css'
 
 function ProjectForm({ handleSubmit, btnText, projectData}) {
 
-    const [categories, setCategories] = useState([])
     const [project, setProject] = useState(projectData || {})
-
+    const [categories, setCategories] = useState([])
+    
     useEffect(() => {
         fetch('http://localhost:5000/categories', {
             method: 'GET',
             headers: {
-                'Content-Type': 'aplication/JSON',
+                'Content-Type': 'aplication/json',
             },
         })
         .then((resp) => resp.json())
@@ -27,7 +27,7 @@ function ProjectForm({ handleSubmit, btnText, projectData}) {
     const submit = (e) => {
         e.preventDefault();
         console.log(project)
-        //handleSubmit(project);
+        handleSubmit(project);
     }
 
     function handleChange(e){
