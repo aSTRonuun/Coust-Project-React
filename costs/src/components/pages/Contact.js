@@ -1,5 +1,12 @@
+import Loading from "../layout/Loading"
+
 function Contact() {
-    return <h1>Contact</h1>
+    return (
+        <div>
+            <h1>Contact</h1>
+        <Loading/>
+        </div>
+    )
 }
 
 export default Contact
